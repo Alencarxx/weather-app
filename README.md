@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Weather App Next.js
 
-## Getting Started
+Aplicação de previsão do tempo desenvolvida em Next.js, com React Query e Chakra UI.  
+Permite consultar a meteorologia de qualquer cidade, consumindo uma API pública.
 
-First, run the development server:
+## Sumário
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Visão Geral](#visão-geral)  
+- [Demonstração](#demonstração)  
+- [Funcionalidades](#funcionalidades)  
+- [Tecnologias](#tecnologias)  
+- [Instalação](#instalação)  
+- [Uso](#uso)  
+- [Estrutura de Pastas](#estrutura-de-pastas)  
+- [Testes](#testes)  
+- [Contribuição](#contribuição)  
+- [Licença](#licença)  
+- [Autor](#autor)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Visão Geral
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este projeto exemplifica boas práticas em Next.js:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Componentização e reutilização  
+- Consumo de API com React Query  
+- Estilização com Chakra UI  
+- Organização de código e testes unitários
 
-## Learn More
+## Demonstração
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone este repositório  
+2. Instale dependências e rode em localhost  
+   ```bash
+   git clone https://github.com/alencarxx/weather-app-nextjs.git
+   cd weather-app-nextjs
+   npm install
+   npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Acesse http://localhost:3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Funcionalidades
+Consulta de previsão por cidade
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tecnologias
+Next.js 15
+React 18
+TypeScript
+Chakra UI
+React Query (@tanstack/react-query v5)
+Jest + React Testing Library
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Instalação
+Pré-requisitos:
+
+Node.js ≥ 18
+npm ou yarn
+Passos:
+
+git clone https://github.com/alencarxx/weather-app-nextjs.git
+cd weather-app-nextjs
+npm install (ou yarn install)
+Criar um arquivo .env.local com sua chave de API (se necessário)
+npm run dev (ou yarn dev)
+Uso
+Abra http://localhost:3000
+Digite o nome da cidade no campo de busca
+Veja a previsão atual e nos próximos dias
+
+Estrutura de Pastas
+├── app/               # Roteamento e layout (Next.js App Router)
+├── components/        # Componentes reutilizáveis
+├── hooks/             # Hooks personalizados (useWeather)
+├── services/          # Funções de integração com API
+├── src/               # Código-fonte (opcional)
+├── tests/             # Testes unitários
+├── public/            # Arquivos estáticos
+├── .gitignore
+├── package.json
+└── README.md
+
+Contribuição
+Contribuições são bem-vindas!
+
+Fork este repositório
+Crie uma branch: git checkout -b feature/nova-funcionalidade
+Commit suas alterações: git commit -m "feat: descrição da mudança"
+Push para a branch: git push origin feature/nova-funcionalidade
+Abra um Pull Request
+Licença
+Este projeto está sob a licença MIT. Veja LICENSE para mais detalhes.
+
+Autor
+Alencar Porto
+
+GitHub: https://github.com/alencarxx
+Email: alencarporto2008@gmail.com
+
