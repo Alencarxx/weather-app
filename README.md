@@ -1,5 +1,8 @@
 # Weather App Next.js
 
+![image](https://github.com/user-attachments/assets/eae54a60-f866-4f45-916b-87fb2e4d4a5f)
+
+
 Aplicação de previsão do tempo desenvolvida em Next.js, com React Query e Chakra UI.  
 Permite consultar a meteorologia de qualquer cidade, consumindo uma API pública.
 
